@@ -1,8 +1,8 @@
 import React from 'react'
 
-const About = () => (
+const Sevices = () => (
   <div className='section'>
-    About
+    Sevices
   </div>
 )
-export default About
+export default Sevices

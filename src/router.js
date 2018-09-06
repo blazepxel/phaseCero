@@ -4,7 +4,7 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-import Home from './pages/home.js'
+import Base from './pages/base.js'
 
 import logo from './assets/img/blaze-logow.png'
 import logoBP from './assets/img/logoBlazePixel.png'
@@ -88,7 +88,7 @@ class RouterSpark extends Component {
               </div>
             </div>
           </nav>
-          <Route exact path='/' component={Home} />
+          <Route exact path='/' component={Base} />
           <footer className='footer is-black'>
             <div className='container'>
               <div className='content has-text-centered'>
