@@ -1,8 +1,8 @@
 import React from 'react'
 
-const About = () => (
+const Portfolio = () => (
   <div className='section'>
-    About
+    Portfolio
   </div>
 )
-export default About
+export default Portfolio

@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
+    "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
+    "@fortawesome/react-fontawesome": "0.1.0-11",
     "animate.css": "^3.7.0",
     "autoprefixer": "7.1.6",
     "axios": "^0.18.0",
@@ -40,6 +43,7 @@
     "react-animate-on-scroll": "^2.1.5",
     "react-dev-utils": "^5.0.1",
     "react-dom": "^16.3.2",
+    "react-fontawesome": "^1.6.1",
     "react-router-dom": "^4.2.2",
     "react-spinkit": "^3.0.0",
     "resolve": "1.6.0",
