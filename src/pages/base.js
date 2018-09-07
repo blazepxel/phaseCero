@@ -7,7 +7,7 @@ import Services from './services'
 import Portfolio from './portfolio'
 
 const Home = () => (
-  <div className='container'>
+  <div>
     <Main />
     <About />
     <Services />
