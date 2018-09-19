@@ -1,8 +1,11 @@
 import React from 'react'
+import logo from '../assets/img/LOGO.png'
 
 const Main = () => (
   <div className='header-img'>
-    <div>Hola</div>
+    <div align=''>
+      <img src={logo} alt='Phase Cero' />
+    </div>
   </div>
 )
 export default Main
