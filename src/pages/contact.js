@@ -120,7 +120,7 @@ class Contact extends Component {
             </div>
           </form>
         </div>
-        <div className='column' style={{height: 400}}>
+        <div className='column' style={{height: 415}}>
           <GoogleMapReact
             bootstrapURLKeys={{ key: 'AIzaSyB8tMMBHC0qAwO9DiJpFQZX3-wFeLnE1bM' }}
             defaultCenter={defaultProps.center}
