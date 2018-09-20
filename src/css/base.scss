@@ -119,4 +119,14 @@ body{
 }
 .services{
 	background-color: #efefef;
+	.service-img{
+		width: 50%;
+	}
+	.title{
+		padding-top: 15px;
+	}
+	.subtitle{
+		text-align: left;
+		padding-top: 15px;
+	}
 }
