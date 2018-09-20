@@ -85,28 +85,36 @@ body{
 .header-img{
 	width: 100%;
 	background-image: url('./assets/img/header.jpg');
+	background-size: cover;
+	background-position: center center;
 	height: 100vh;
 	align-self: center;
 	display: flex;
 	color: $white;
 	div{
-		text-align: center;
-    align-self: center;
-    width: 100%;
-		font-size: 16rem;
+		img{
+			width: 30%;
+		}
 	}
 }
 .about-section{
-	background-color: dimgray;
+	background-color: #1a2127;
 	display: flex;
 	flex-wrap: wrap;
+	color: #ffffff;
 	&-resume{
 		width: 70%;
+		.container{
+			padding-top: 20px;
+			padding-bottom: 20px;
+			.title{
+				color: #ffffff;
+			}
+		}
 	}
 	&-resume-img{
 		width: 30%;
-		background-image: url('./assets/img/header.jpg');
-		height: 15rem;
+		height: 100%;
 	}
 }
 .services{
