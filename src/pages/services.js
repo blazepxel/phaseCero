@@ -11,40 +11,40 @@ import supervision from '../assets/img/supervision.png'
 const Sevices = () => (
   <div className='section services'>
     <p className='title' align='center'>Nuestros Servicios</p>
-    <br/>
+    <br />
     <div className='tile is-ancestor'>
       <div className='tile is-parent is-vertical'>
         <div className='tile is-child' align='center'>
-          <img className='service-img' src={rehabilitacion} alt="Rehabilitación integral de edificios."/>
+          <img className='service-img' src={rehabilitacion} alt='Rehabilitación integral de edificios.' />
           <p className='title'>Rehabilitación integral de edificios.</p>
           <p className='subtitle'>
-            Somos especialistas en técnicas de construcción, rehabilitación, restauración y mantenimiento 
-            de edificios en general. Ejecutamos cualquier intervención que requiera el edificio para dejarlo 
+            Somos especialistas en técnicas de construcción, rehabilitación, restauración y mantenimiento
+            de edificios en general. Ejecutamos cualquier intervención que requiera el edificio para dejarlo
             en perfecto estado, respetando en todo momento la normatividad vigente.
           </p>
         </div>
         <div className='tile is-child' align='center'>
-          <img className='service-img' src={instalaciones} alt="Instalaciones especiales."/>
+          <img className='service-img' src={instalaciones} alt='Instalaciones especiales.' />
           <p className='title'>Instalaciones especiales.</p>
           <p className='subtitle'>
-            La intervención y especialización de nuestro personal técnico nos permite llevar a cabo 
-            instalaciones eléctricas, hidro-mecánicas,  voz y datos, gases medicinales, aire acondicionado 
+            La intervención y especialización de nuestro personal técnico nos permite llevar a cabo
+            instalaciones eléctricas, hidro-mecánicas,  voz y datos, gases medicinales, aire acondicionado
             entre otras; con apego a las normas nacionales e internacionales que rigen para cada tipo de inmueble.
           </p>
         </div>
       </div>
       <div className='tile is-parent is-vertical'>
         <div className='tile is-child' align='center'>
-          <img className='service-img' src={obra} alt="Obra Pública."/>
+          <img className='service-img' src={obra} alt='Obra Pública.' />
           <p className='title'>Obra Pública.</p>
           <p className='subtitle'>
-            Disponemos de un equipo de trabajo profesional, con la experiencia en cualquier rubro de la obra 
-            pública. Siendo responsables de la gestión interna, planeación, desarrollo y ejecución de cada 
+            Disponemos de un equipo de trabajo profesional, con la experiencia en cualquier rubro de la obra
+            pública. Siendo responsables de la gestión interna, planeación, desarrollo y ejecución de cada
             compromiso adquirido con los gobiernos Municipales y Estatales.
           </p>
         </div>
         <div className='tile is-child' align='center'>
-          <img className='service-img' src={planeacion} alt="Planeación."/>
+          <img className='service-img' src={planeacion} alt='Planeación.' />
           <p className='title'>Planeación.</p>
           <p className='subtitle'>
             <ul>
@@ -57,16 +57,16 @@ const Sevices = () => (
       </div>
       <div className='tile is-parent is-vertical'>
         <div className='tile is-child' align='center'>
-          <img className='service-img' src={estructura} alt="Estructuras de Acero."/>
+          <img className='service-img' src={estructura} alt='Estructuras de Acero.' />
           <p className='title'>Estructuras de Acero.</p>
           <p className='subtitle'>
-            Poseemos los medios necesarios para el diseño y construcción de estructuras metálicas. Al contar 
-            con mano de obra calificada y técnicos enfocados a la optimización de procesos constructivos, 
+            Poseemos los medios necesarios para el diseño y construcción de estructuras metálicas. Al contar
+            con mano de obra calificada y técnicos enfocados a la optimización de procesos constructivos,
             nos permiten reducir tiempos de ejecución de obra, con una gran calidad en nuestros trabajos.
           </p>
         </div>
         <div className='tile is-child' align='center'>
-          <img className='service-img' src={diseño} alt="Diseño."/>
+          <img className='service-img' src={diseño} alt='Diseño.' />
           <p className='title'>Diseño.</p>
           <p className='subtitle'>
             <ul>
@@ -80,16 +80,16 @@ const Sevices = () => (
       </div>
       <div className='tile is-parent is-vertical'>
         <div className='tile is-child' align='center'>
-          <img className='service-img' src={equipo} alt="Equipo propio del inmueble."/>
+          <img className='service-img' src={equipo} alt='Equipo propio del inmueble.' />
           <p className='title'>Equipo propio del inmueble.</p>
           <p className='subtitle'>
-          Realizamos la obra civil necesaria, así como el suministro y colocación de equipos especiales, 
-          tales como plantas tratadoras de aguas residuales, cárcamos de bombeo y tanques de almacenamiento 
+          Realizamos la obra civil necesaria, así como el suministro y colocación de equipos especiales,
+          tales como plantas tratadoras de aguas residuales, cárcamos de bombeo y tanques de almacenamiento
           de agua.
           </p>
         </div>
         <div className='tile is-child' align='center'>
-          <img className='service-img' src={supervision} alt="Supervisión."/>
+          <img className='service-img' src={supervision} alt='Supervisión.' />
           <p className='title'>Supervisión.</p>
           <p className='subtitle'>
             <ul>
