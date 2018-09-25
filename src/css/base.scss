@@ -140,3 +140,16 @@ body{
 	min-height: 20rem;
 	// font-weight: bold;
 }
+.form-contact{
+	background-color: black;
+	.input{
+		background-color: black;
+		color: white;
+		border: 0;
+		border-bottom: 1px solid white;
+		border-radius: 0px;
+	}
+	label.label{
+		color: white;
+	}
+}

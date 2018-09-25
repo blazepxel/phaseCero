@@ -42,13 +42,19 @@ class Contact extends Component {
       zoom: 11
     }
 
-    return (<div className='hero' style={{backgroundColor: 'black'}}>
+    return (<div className='hero form-contact'>
+      <div className='columns'>
+        <div className='column section'>
+          Constactanos
+        </div>
+      </div>
       <div className='columns'>
         <div className='column section'>
           <form onSubmit={(e) => this.handleSubmit(e)}>
             <div className='field is-horizontal'>
               <div className='field-body'>
                 <div className='field'>
+                  <label className='label'>Nombre</label>
                   <div className='control'>
                     <input
                       required
@@ -66,6 +72,7 @@ class Contact extends Component {
             <div className='field is-horizontal'>
               <div className='field-body'>
                 <div className='field'>
+                  <label className='label'>Correo electronico</label>
                   <div className='control'>
                     <input
                       className='input'
@@ -83,6 +90,7 @@ class Contact extends Component {
             <div className='field is-horizontal'>
               <div className='field-body'>
                 <div className='field'>
+                  <label className='label'>Asunto</label>
                   <div className='control'>
                     <input
                       required
@@ -100,10 +108,11 @@ class Contact extends Component {
             <div className='field is-horizontal'>
               <div className='field-body'>
                 <div className='field'>
+                  <label className='label'>Mensaje</label>
                   <div className='control'>
                     <textarea
                       required
-                      className='textarea'
+                      className='input textarea'
                       placeholder='Mensaje'
                       value={form.message}
                       name='message'
@@ -114,7 +123,7 @@ class Contact extends Component {
             </div>
 
             <div className='control'>
-              <button className='button is-fullwidth is-success'>
+              <button className='button is-fullwidth is-red'>
                 <label>Enviar</label>
               </button>
             </div>
