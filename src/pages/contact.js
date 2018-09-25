@@ -45,12 +45,10 @@ class Contact extends Component {
     return (<div className='hero form-contact'>
       <div className='columns'>
         <div className='column section'>
-          Constactanos
-        </div>
-      </div>
-      <div className='columns'>
-        <div className='column section'>
-          <form onSubmit={(e) => this.handleSubmit(e)}>
+          <form onSubmit={(e) => this.handleSubmit(e)} autocomplete='off'>
+            <p className='title has-text-white'>
+              Contáctanos
+            </p>
             <div className='field is-horizontal'>
               <div className='field-body'>
                 <div className='field'>
@@ -90,28 +88,11 @@ class Contact extends Component {
             <div className='field is-horizontal'>
               <div className='field-body'>
                 <div className='field'>
-                  <label className='label'>Asunto</label>
-                  <div className='control'>
-                    <input
-                      required
-                      className='input '
-                      name='subject'
-                      type='text'
-                      placeholder='Asunto'
-                      value={form.subject}
-                      onChange={(e) => this.handleChangeForm(e)} />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className='field is-horizontal'>
-              <div className='field-body'>
-                <div className='field'>
                   <label className='label'>Mensaje</label>
                   <div className='control'>
                     <textarea
                       required
+                      rows={2}
                       className='input textarea'
                       placeholder='Mensaje'
                       value={form.message}
@@ -122,14 +103,14 @@ class Contact extends Component {
               </div>
             </div>
 
-            <div className='control'>
-              <button className='button is-fullwidth is-red'>
+            <div className='control is-flex-end'>
+              <button className='button is-red is-rounded'>
                 <label>Enviar</label>
               </button>
             </div>
           </form>
         </div>
-        <div className='column' style={{height: 415}}>
+        <div className='column' style={{height: '70vh'}}>
           <GoogleMapReact
             bootstrapURLKeys={{ key: 'AIzaSyB8tMMBHC0qAwO9DiJpFQZX3-wFeLnE1bM' }}
             defaultCenter={defaultProps.center}
