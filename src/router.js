@@ -5,8 +5,9 @@ import {
 } from 'react-router-dom'
 import Base from './pages/base.js'
 
-import logo from './assets/img/blaze-logow.png'
 import logoBP from './assets/img/logoBlazePixel.png'
+import logo from './assets/img/LOGO.png'
+
 import $ from 'jquery'
 
 class RouterSpark extends Component {
@@ -43,10 +44,10 @@ class RouterSpark extends Component {
     var {showImg} = this.state
     var navbar = ''
     if (showImg) {
-      navbar = (<img src={logo} alt='Blaze Pixel' width="130" height="40" />)
+      navbar = (<img src={logo} alt='Blaze Pixel' width='40' height='40' />)
     } else {
       navbar = (
-        <img src={logo} alt='Blaze Pixel' width="130" height="40" />)
+        <img src={logo} alt='Blaze Pixel' width='40' height='40' />)
     }
 
     return (
@@ -54,7 +55,7 @@ class RouterSpark extends Component {
         <div>
           <nav className={'navbar ' + this.state.classHeader + (this.state.showMenu ? ' header-black' : '')}>
             <div className='navbar-brand'>
-              <a className="navbar-item" href="#main">
+              <a className='navbar-item' href='#main'>
                 {navbar}
               </a>
               <div className={'navbar-burger burger ' + (this.state.showMenu ? 'is-active' : '')}
@@ -68,21 +69,20 @@ class RouterSpark extends Component {
 
             <div id='navbarExampleTransparentExample' className={'navbar-menu' + (this.state.showMenu ? 'is-active' : '')} >
               <div className='navbar-end'>
-                <a className="navbar-item" href="#main" onClick={() => this.setState({showMenu: false})}>
+                <a className='navbar-item' href='#main' onClick={() => this.setState({showMenu: false})}>
                   Inicio
                 </a>
-                <a className="navbar-item" href="#services" onClick={() => this.setState({showMenu: false})}>
+                <a className='navbar-item' href='#services' onClick={() => this.setState({showMenu: false})}>
                   Servicios
                 </a>
-                <a className="navbar-item" href="#about" onClick={() => this.setState({showMenu: false})}>
+                <a className='navbar-item' href='#about' onClick={() => this.setState({showMenu: false})}>
                   Nosotros
                 </a>
-                <a className="navbar-item" href="#contact" onClick={() => this.setState({showMenu: false})}>
+                <a className='navbar-item' href='#contact' onClick={() => this.setState({showMenu: false})}>
                   Contáctanos
                 </a>
                 <div className='navbar-item'>
-                  <div className='field is-grouped'>
-                  </div>
+                  <div className='field is-grouped' />
                 </div>
               </div>
             </div>
