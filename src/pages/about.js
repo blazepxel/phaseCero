@@ -2,7 +2,7 @@ import React from 'react'
 import about from '../assets/img/about_us.jpeg'
 
 const About = () => (
-  <div className='about-section'>
+  <div className='about-section' id='about'>
     <div className='about-section-resume'>
       <div className='container is-fluid'>
         <p className='title'>Sobre nosotros</p>

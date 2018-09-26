@@ -78,6 +78,9 @@ class RouterSpark extends Component {
                 <a className='navbar-item' href='#about' onClick={() => this.setState({showMenu: false})}>
                   Nosotros
                 </a>
+                <a className='navbar-item' href='#portfolio' onClick={() => this.setState({showMenu: false})}>
+                  Portafolio
+                </a>
                 <a className='navbar-item' href='#contact' onClick={() => this.setState({showMenu: false})}>
                   Contáctanos
                 </a>

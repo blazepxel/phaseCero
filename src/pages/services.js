@@ -9,7 +9,7 @@ import equipo from '../assets/img/equipo_propio.png'
 import supervision from '../assets/img/supervision.png'
 
 const Sevices = () => (
-  <div className='section services'>
+  <div className='section services' id='services'>
     <p className='title' align='center'>Nuestros Servicios</p>
     <br />
     <div className='tile is-ancestor'>
