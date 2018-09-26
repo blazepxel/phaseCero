@@ -81,7 +81,11 @@ body{
 	display: flex;
 	justify-content: center;
 }
-
+.main{
+	.media_link{
+		writing-mode: vertical-lr;
+	}
+}
 .header-img{
 	width: 100%;
 	background-image: url('./assets/img/header.jpg');
@@ -103,7 +107,12 @@ body{
 	flex-wrap: wrap;
 	color: #ffffff;
 	&-resume{
-		width: 70%;
+		@include touch{
+			width: 100%;
+		}
+		@include from($desktop){
+			width: 70%;
+		}
 		.container{
 			padding-top: 20px;
 			padding-bottom: 20px;
@@ -113,8 +122,13 @@ body{
 		}
 	}
 	&-resume-img{
-		width: 30%;
-		height: 100%;
+		@include touch{
+			height: 100%;
+		}
+		@include from($desktop){
+			width: 30%;
+			height: 100%;
+		}
 	}
 }
 .services{
