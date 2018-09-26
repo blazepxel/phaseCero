@@ -3,6 +3,8 @@ $gray-light: #FAFAFA;
 $white: white;
 $navbar-height: 5.5rem;
 $margin: 1rem;
+$dark: #141720;
+$red: #df3e3e;
 
 *
 {
@@ -99,7 +101,7 @@ body{
 	}
 }
 .about-section{
-	background-color: #1a2127;
+	background-color: $dark;
 	display: flex;
 	flex-wrap: wrap;
 	color: #ffffff;
@@ -139,4 +141,44 @@ body{
 .subtitle-service{
 	min-height: 20rem;
 	// font-weight: bold;
+}
+.form-contact{
+	background-color: $dark;
+	.input{
+		background-color: $dark;
+		color: white;
+		border: 0;
+		border-bottom: 1px solid white;
+		border-radius: 0px;
+	}
+	.input:hover{
+		border: 0;
+		border-bottom: 1px solid white;
+	}
+		box-shadow: inherit;
+	.input:active{
+		border: 0;
+		border-bottom: 1px solid white;
+		box-shadow: inherit;
+	}
+	.input:focus{
+		border: 0;
+		border-bottom: 1px solid white;
+		box-shadow: inherit;
+	}
+	label.label{
+		color: white;
+	}
+	button.button{
+		background-color: $red;
+		color: white;
+		border: 0px;
+	}
+	.section{
+		padding: 3rem 4.5rem;
+	}
+}
+.is-flex-end{
+	display: flex;
+	justify-content: flex-end;
 }
