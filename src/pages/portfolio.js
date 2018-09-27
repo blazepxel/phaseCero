@@ -2,7 +2,7 @@ import React from 'react'
 import {Timeline, TimelineEvent} from 'react-event-timeline'
 
 const Portfolio = () => (
-  <div className='section'>
+  <div className='section' id='portfolio'>
     <div className='columns'>
       <div className='column'>
         <Timeline>

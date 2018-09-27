@@ -42,7 +42,7 @@ class Contact extends Component {
       zoom: 11
     }
 
-    return (<div className='hero form-contact'>
+    return (<div className='hero form-contact' id='contact'>
       <div className='columns'>
         <div className='column section'>
           <form onSubmit={(e) => this.handleSubmit(e)} autocomplete='off'>
@@ -59,7 +59,6 @@ class Contact extends Component {
                       className='input'
                       name='name'
                       type='text'
-                      placeholder={'Nombre'}
                       value={form.name}
                       onChange={(e) => this.handleChangeForm(e)} />
                   </div>
@@ -77,7 +76,6 @@ class Contact extends Component {
                       required
                       name='email'
                       type='email'
-                      placeholder={'Email'}
                       value={form.email}
                       onChange={(e) => this.handleChangeForm(e)} />
                   </div>
@@ -94,7 +92,6 @@ class Contact extends Component {
                       required
                       rows={2}
                       className='input textarea'
-                      placeholder='Mensaje'
                       value={form.message}
                       name='message'
                       onChange={(e) => this.handleChangeForm(e)} />

@@ -49,13 +49,21 @@ body{
 		color: black !important;
 	}
 	.navbar-item:hover{
-		background-color: gray;
+		background-color: white;
+		color: gray !important;
 	}
 }
 
 .is-transparent{
 	background-color: transparent;
 	transition: all 250ms ease-in;
+	*{
+		color: white !important;
+	}
+	.navbar-item:hover{
+		background-color: white;
+		color: gray !important;
+	}
 }
 
 .navbar-brand{
@@ -181,4 +189,12 @@ body{
 .is-flex-end{
 	display: flex;
 	justify-content: flex-end;
+}
+#title-brand{
+	font-family: 'Anton', sans-serif !important;
+	color: #FFCE6E;
+	letter-spacing:0;
+	line-height:74px;
+	text-shadow:0 15px 72px rgba(0,0,0,0.2);
+	font-size: 70px;
 }
