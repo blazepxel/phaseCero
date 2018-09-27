@@ -5,6 +5,11 @@
   .subtitle-service{
     min-height: inherit !important;
   }
+  #title-brand{
+    text-align: center;
+    margin-top: 20vh;
+    font-size: 4rem;
+  }
 }
 @include touch {
   .subtitle{
