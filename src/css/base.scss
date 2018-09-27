@@ -103,32 +103,20 @@ body{
 }
 .about-section{
 	background-color: #1a2127;
-	display: flex;
-	flex-wrap: wrap;
 	color: #ffffff;
-	&-resume{
-		@include touch{
-			width: 100%;
-		}
-		@include from($desktop){
-			width: 70%;
-		}
-		.container{
-			padding-top: 20px;
-			padding-bottom: 20px;
-			.title{
-				color: #ffffff;
-			}
+	.container{
+		padding-top: 9rem;
+		padding-bottom: 9rem;
+		.title{
+			color: #ffffff;
+			margin-bottom: 4rem;
 		}
 	}
-	&-resume-img{
-		@include touch{
-			height: 100%;
-		}
-		@include from($desktop){
-			width: 30%;
-			height: 100%;
-		}
+	.about-img{
+		height: 100%;
+		background-image: url('./assets/img/about_us_2.jpg');
+		background-size: cover;
+		background-position: center center;
 	}
 }
 .services{
