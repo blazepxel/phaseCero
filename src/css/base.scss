@@ -3,6 +3,8 @@ $gray-light: #FAFAFA;
 $white: white;
 $navbar-height: 5.5rem;
 $margin: 1rem;
+$dark: #141720;
+$red: #df3e3e;
 
 *
 {
@@ -28,31 +30,40 @@ body{
 }
 
 .is-black{
-	color: white;
-	background-color: #3A3A3A !important;
+	color: black;
+	background-color: white !important;
 	transition: all 1s ease-in;
 	*{
-		color: white !important;
-	}
-	.navbar-item:hover{
-		background-color: gray;
-	}
-}
-.header-black{
-	color: white;
-	background-color: #3A3A3A !important;
-	transition: all 250ms ease-in;
-	*{
-		color: white !important;
+		color: black !important;
 	}
 	.navbar-item:hover{
 		background-color: gray;
 	}
 }
 
+.header-black{
+	color: black;
+	background-color: white !important;
+	transition: all 250ms ease-in;
+	*{
+		color: black !important;
+	}
+	.navbar-item:hover{
+		background-color: white;
+		color: gray !important;
+	}
+}
+
 .is-transparent{
 	background-color: transparent;
 	transition: all 250ms ease-in;
+	*{
+		color: white !important;
+	}
+	.navbar-item:hover{
+		background-color: white;
+		color: gray !important;
+	}
 }
 
 .navbar-brand{
@@ -131,4 +142,61 @@ body{
 		text-align: left;
 		padding-top: 15px;
 	}
+}
+.title-service{
+	font-size: 1.25rem;
+	font-weight: bold;
+	min-height: 3.9rem;
+}
+.subtitle-service{
+	min-height: 20rem;
+	// font-weight: bold;
+}
+.form-contact{
+	background-color: $dark;
+	.input{
+		background-color: $dark;
+		color: white;
+		border: 0;
+		border-bottom: 1px solid white;
+		border-radius: 0px;
+	}
+	.input:hover{
+		border: 0;
+		border-bottom: 1px solid white;
+	}
+		box-shadow: inherit;
+	.input:active{
+		border: 0;
+		border-bottom: 1px solid white;
+		box-shadow: inherit;
+	}
+	.input:focus{
+		border: 0;
+		border-bottom: 1px solid white;
+		box-shadow: inherit;
+	}
+	label.label{
+		color: white;
+	}
+	button.button{
+		background-color: $red;
+		color: white;
+		border: 0px;
+	}
+	.section{
+		padding: 3rem 4.5rem;
+	}
+}
+.is-flex-end{
+	display: flex;
+	justify-content: flex-end;
+}
+#title-brand{
+	font-family: 'Anton', sans-serif !important;
+	color: #FFCE6E;
+	letter-spacing:0;
+	line-height:74px;
+	text-shadow:0 15px 72px rgba(0,0,0,0.2);
+	font-size: 70px;
 }

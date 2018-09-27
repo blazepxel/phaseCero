@@ -9,15 +9,15 @@ import equipo from '../assets/img/equipo_propio.png'
 import supervision from '../assets/img/supervision.png'
 
 const Sevices = () => (
-  <div className='section services'>
+  <div className='section services' id='services'>
     <p className='title' align='center'>Nuestros Servicios</p>
     <br />
     <div className='tile is-ancestor'>
       <div className='tile is-parent is-vertical'>
         <div className='tile is-child' align='center'>
           <img className='service-img' src={rehabilitacion} alt='Rehabilitación integral de edificios.' />
-          <p className='title'>Rehabilitación integral de edificios.</p>
-          <p className='subtitle'>
+          <p className='title-service'>Rehabilitación integral de edificios.</p>
+          <p className='subtitle subtitle-service'>
             Somos especialistas en técnicas de construcción, rehabilitación, restauración y mantenimiento
             de edificios en general. Ejecutamos cualquier intervención que requiera el edificio para dejarlo
             en perfecto estado, respetando en todo momento la normatividad vigente.
@@ -25,8 +25,8 @@ const Sevices = () => (
         </div>
         <div className='tile is-child' align='center'>
           <img className='service-img' src={instalaciones} alt='Instalaciones especiales.' />
-          <p className='title'>Instalaciones especiales.</p>
-          <p className='subtitle'>
+          <p className='title-service'>Instalaciones especiales.</p>
+          <p className='subtitle subtitle-service'>
             La intervención y especialización de nuestro personal técnico nos permite llevar a cabo
             instalaciones eléctricas, hidro-mecánicas,  voz y datos, gases medicinales, aire acondicionado
             entre otras; con apego a las normas nacionales e internacionales que rigen para cada tipo de inmueble.
@@ -36,8 +36,8 @@ const Sevices = () => (
       <div className='tile is-parent is-vertical'>
         <div className='tile is-child' align='center'>
           <img className='service-img' src={obra} alt='Obra Pública.' />
-          <p className='title'>Obra Pública.</p>
-          <p className='subtitle'>
+          <p className='title-service'>Obra Pública.</p>
+          <p className='subtitle subtitle-service'>
             Disponemos de un equipo de trabajo profesional, con la experiencia en cualquier rubro de la obra
             pública. Siendo responsables de la gestión interna, planeación, desarrollo y ejecución de cada
             compromiso adquirido con los gobiernos Municipales y Estatales.
@@ -45,8 +45,8 @@ const Sevices = () => (
         </div>
         <div className='tile is-child' align='center'>
           <img className='service-img' src={planeacion} alt='Planeación.' />
-          <p className='title'>Planeación.</p>
-          <p className='subtitle'>
+          <p className='title-service'>Planeación.</p>
+          <p className='subtitle subtitle-service'>
             <ul>
               <li>Estudios socioeconómicos.</li>
               <li>Proyectos de Inversión económica.</li>
@@ -58,8 +58,8 @@ const Sevices = () => (
       <div className='tile is-parent is-vertical'>
         <div className='tile is-child' align='center'>
           <img className='service-img' src={estructura} alt='Estructuras de Acero.' />
-          <p className='title'>Estructuras de Acero.</p>
-          <p className='subtitle'>
+          <p className='title-service'>Estructuras de Acero.</p>
+          <p className='subtitle subtitle-service'>
             Poseemos los medios necesarios para el diseño y construcción de estructuras metálicas. Al contar
             con mano de obra calificada y técnicos enfocados a la optimización de procesos constructivos,
             nos permiten reducir tiempos de ejecución de obra, con una gran calidad en nuestros trabajos.
@@ -67,8 +67,8 @@ const Sevices = () => (
         </div>
         <div className='tile is-child' align='center'>
           <img className='service-img' src={diseño} alt='Diseño.' />
-          <p className='title'>Diseño.</p>
-          <p className='subtitle'>
+          <p className='title-service'>Diseño.</p>
+          <p className='subtitle subtitle-service'>
             <ul>
               <li>Proyectos Arquitectónicos.</li>
               <li>Ingenierías básicas y espaciales.</li>
@@ -81,8 +81,8 @@ const Sevices = () => (
       <div className='tile is-parent is-vertical'>
         <div className='tile is-child' align='center'>
           <img className='service-img' src={equipo} alt='Equipo propio del inmueble.' />
-          <p className='title'>Equipo propio del inmueble.</p>
-          <p className='subtitle'>
+          <p className='title-service'>Equipo propio del inmueble.</p>
+          <p className='subtitle subtitle-service'>
           Realizamos la obra civil necesaria, así como el suministro y colocación de equipos especiales,
           tales como plantas tratadoras de aguas residuales, cárcamos de bombeo y tanques de almacenamiento
           de agua.
@@ -90,8 +90,8 @@ const Sevices = () => (
         </div>
         <div className='tile is-child' align='center'>
           <img className='service-img' src={supervision} alt='Supervisión.' />
-          <p className='title'>Supervisión.</p>
-          <p className='subtitle'>
+          <p className='title-service'>Supervisión.</p>
+          <p className='subtitle subtitle-service'>
             <ul>
               <li>Control y seguimiento de obra.</li>
               <li>Instalaciones especiales.</li>
