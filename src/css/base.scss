@@ -133,14 +133,13 @@ body{
 .services{
 	background-color: #efefef;
 	.service-img{
-		width: 50%;
+		width: 40%;
 	}
 	.title{
 		padding-top: 15px;
 	}
 	.subtitle{
 		text-align: left;
-		padding-top: 15px;
 	}
 }
 .title-service{
@@ -149,7 +148,8 @@ body{
 	min-height: 3.9rem;
 }
 .subtitle-service{
-	min-height: 20rem;
+	font-size: 1.15rem;
+	min-height: 12rem;
 	// font-weight: bold;
 }
 .form-contact{
