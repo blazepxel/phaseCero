@@ -92,7 +92,11 @@ body{
 	display: flex;
 	justify-content: center;
 }
-
+.main{
+	.media_link{
+		writing-mode: vertical-lr;
+	}
+}
 .header-img{
 	width: 100%;
 	background-image: url('./assets/img/header.jpg');
@@ -109,23 +113,21 @@ body{
 	}
 }
 .about-section{
-	background-color: $dark;
-	display: flex;
-	flex-wrap: wrap;
+	background-color: #1a2127;
 	color: #ffffff;
-	&-resume{
-		width: 70%;
-		.container{
-			padding-top: 20px;
-			padding-bottom: 20px;
-			.title{
-				color: #ffffff;
-			}
+	.container{
+		padding-top: 9rem;
+		padding-bottom: 9rem;
+		.title{
+			color: #ffffff;
+			margin-bottom: 4rem;
 		}
 	}
-	&-resume-img{
-		width: 30%;
+	.about-img{
 		height: 100%;
+		background-image: url('./assets/img/about_us_2.jpg');
+		background-size: cover;
+		background-position: center center;
 	}
 }
 .services{
