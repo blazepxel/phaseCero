@@ -141,3 +141,33 @@ body{
 	min-height: 20rem;
 	// font-weight: bold;
 }
+
+.timeline-overflow{
+	overflow: scroll;
+	height: 45vh;
+}
+
+.slider-portfolio{
+	width: 69vh;
+    height: 19vh;
+}
+
+.slider-mini{
+	width: 26vh;
+	height: 18vh;
+	padding: 2vh;
+}
+
+.slider-full{
+	width: 60vh;
+	height: 35vh;
+}
+
+.has-flex-end{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.has-text-centered{
+	text-align: center;
+}
