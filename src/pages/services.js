@@ -9,7 +9,7 @@ import equipo from '../assets/img/equipo_propio.png'
 import supervision from '../assets/img/supervision.png'
 
 const Sevices = () => (
-  <div className='section services'>
+  <div className='section services' id='services'>
     <p className='title' align='center'>Nuestros Servicios</p>
     <br />
     <div className='tile is-ancestor'>
@@ -19,8 +19,7 @@ const Sevices = () => (
           <p className='title-service'>Rehabilitación integral de edificios.</p>
           <p className='subtitle subtitle-service'>
             Somos especialistas en técnicas de construcción, rehabilitación, restauración y mantenimiento
-            de edificios en general. Ejecutamos cualquier intervención que requiera el edificio para dejarlo
-            en perfecto estado, respetando en todo momento la normatividad vigente.
+            de edificios en general, respetando en todo momento la normatividad vigente.
           </p>
         </div>
         <div className='tile is-child' align='center'>
@@ -28,8 +27,8 @@ const Sevices = () => (
           <p className='title-service'>Instalaciones especiales.</p>
           <p className='subtitle subtitle-service'>
             La intervención y especialización de nuestro personal técnico nos permite llevar a cabo
-            instalaciones eléctricas, hidro-mecánicas,  voz y datos, gases medicinales, aire acondicionado
-            entre otras; con apego a las normas nacionales e internacionales que rigen para cada tipo de inmueble.
+            instalaciones específicas de cualquie tipo, con apego a las normas nacionales e internacionales 
+            que rigen para cada tipo de inmueble.
           </p>
         </div>
       </div>
@@ -38,8 +37,8 @@ const Sevices = () => (
           <img className='service-img' src={obra} alt='Obra Pública.' />
           <p className='title-service'>Obra Pública.</p>
           <p className='subtitle subtitle-service'>
-            Disponemos de un equipo de trabajo profesional, con la experiencia en cualquier rubro de la obra
-            pública. Siendo responsables de la gestión interna, planeación, desarrollo y ejecución de cada
+            Nuestro equipo de trabajo cuenta con la experiencia en cualquier rubro de obra
+            pública. Responsabilizandose de la gestión interna, planeación, desarrollo y ejecución de cada
             compromiso adquirido con los gobiernos Municipales y Estatales.
           </p>
         </div>
@@ -60,9 +59,7 @@ const Sevices = () => (
           <img className='service-img' src={estructura} alt='Estructuras de Acero.' />
           <p className='title-service'>Estructuras de Acero.</p>
           <p className='subtitle subtitle-service'>
-            Poseemos los medios necesarios para el diseño y construcción de estructuras metálicas. Al contar
-            con mano de obra calificada y técnicos enfocados a la optimización de procesos constructivos,
-            nos permiten reducir tiempos de ejecución de obra, con una gran calidad en nuestros trabajos.
+            Poseemos los medios necesarios para el diseño y construcción de estructuras metálicas, permitiéndonos reducir tiempos de ejecución de obra, con una gran calidad en nuestros trabajos.
           </p>
         </div>
         <div className='tile is-child' align='center'>

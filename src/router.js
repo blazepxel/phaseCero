@@ -50,10 +50,16 @@ class RouterSpark extends Component {
         <img src={logo} alt='Blaze Pixel' width='40' height='40' />)
     }
 
+    let classNameHeader = this.state.classHeader
+
+    if (this.state.showMenu) {
+      classNameHeader = ' header-black'
+    }
+
     return (
       <Router>
         <div>
-          <nav className={'navbar ' + this.state.classHeader + (this.state.showMenu ? ' header-black' : '')}>
+          <nav className={'navbar ' + classNameHeader}>
             <div className='navbar-brand'>
               <a className='navbar-item' href='#main'>
                 {navbar}
@@ -77,6 +83,9 @@ class RouterSpark extends Component {
                 </a>
                 <a className='navbar-item' href='#about' onClick={() => this.setState({showMenu: false})}>
                   Nosotros
+                </a>
+                <a className='navbar-item' href='#portfolio' onClick={() => this.setState({showMenu: false})}>
+                  Portafolio
                 </a>
                 <a className='navbar-item' href='#contact' onClick={() => this.setState({showMenu: false})}>
                   Contáctanos
