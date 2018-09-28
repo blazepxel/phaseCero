@@ -8,7 +8,7 @@ $red: #df3e3e;
 
 *
 {
-	 font-family: 'Tajawal' !important;
+	 font-family: 'Roboto' !important;
 
 }
 body{
@@ -92,11 +92,6 @@ body{
 	display: flex;
 	justify-content: center;
 }
-.main{
-	.media_link{
-		writing-mode: vertical-lr;
-	}
-}
 .header-img{
 	width: 100%;
 	background-image: url('./assets/img/header.jpg');
@@ -113,21 +108,48 @@ body{
 	}
 }
 .about-section{
-	background-color: #1a2127;
-	color: #ffffff;
-	.container{
-		padding-top: 9rem;
-		padding-bottom: 9rem;
-		.title{
-			color: #ffffff;
-			margin-bottom: 4rem;
-		}
-	}
-	.about-img{
+	@include touch{
 		height: 100%;
-		background-image: url('./assets/img/about_us_2.jpg');
-		background-size: cover;
-		background-position: center center;
+	}
+	@include from($desktop){
+		height: 100vh;
+	}
+	background-color: #ffffff;
+	.about-resume{
+		@include touch{
+			height: 100%;
+		}
+		@include from($desktop){
+			height: 75vh;
+			padding-top: 5rem;
+		}
+		background-color: #1a2127;
+		color: #ffffff;
+		.contact-links{
+			a{
+				color: #ffffff;
+				text-decoration: inherit;
+			}
+			@include touch{
+				font-size: 2rem;
+				padding-bottom: 2rem;
+			}
+			@include from($desktop){
+				font-size: 1.3rem;
+				padding-top: 1rem;
+			}
+		}
+		.contact-text{
+			font-size: 1.2rem;
+			writing-mode: vertical-lr;
+		}
+		.resume{
+			.title{
+				font-family: 'Montserrat', sans-serif !important;
+				color: #ffffff;
+				font-weight: 400;
+			}
+		}
 	}
 }
 .services{
