@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../assets/img/LOGO.png'
 
 const Main = () => (
   <div className='header-img' id='main'>
@@ -8,11 +7,10 @@ const Main = () => (
         PHASE CERO
       </p>
       <p id='subtitle-brand'>
-        INMOBILIARIA Y CONSTRUCTORA 
+        INMOBILIARIA Y CONSTRUCTORA
       </p>
-      
       <div className='main-link'>
-        <a href="#services" className='button'>
+        <a href='#services' className='button'>
           Nuestros Servicios
         </a>
       </div>
