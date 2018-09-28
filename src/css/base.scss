@@ -144,6 +144,14 @@ body{
 			writing-mode: vertical-lr;
 		}
 		.resume{
+			@include touch{
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+			@include from($desktop){
+				padding-left: 6rem;
+				padding-right: 6rem;
+			}
 			.title{
 				font-family: 'Montserrat', sans-serif !important;
 				color: #ffffff;
