@@ -1,57 +1,28 @@
 import React, { Component } from 'react'
 import {Timeline, TimelineEvent} from 'react-event-timeline'
-import FontAwesome from 'react-fontawesome'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import Slider from "react-slick"
-import img3 from '../assets/img/image3.jpeg'
-import img4 from '../assets/img/image4.jpeg'
-import img6 from '../assets/img/image6.jpeg'
-import img7 from '../assets/img/image7.jpeg'
+import { Scrollbars } from 'react-custom-scrollbars';
 
-const initialState = {
-  currentPortfolio: null
-}
-
+import projects from './projects'
 var settings = {
   dots: false,
   infinite: true,
   autoplay: true,
   pauseOnHover: false,
-  speed: 2000,
-  slidesToShow: 3,
+  speed: 4000,
+  slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false
 }
-
-const portfolioOne = [
-  {
-    title: 'Mantenimiento integral y decoración de la Parroquia del señor del perdón en Cuetzalá Guerrero.',
-    imageTop: '/public/img/foto1.png', 
-    imageBottom: '/public/img/cecilia-deporte.png', 
-    content: `Propietario: Cuetzalá del Progreso,
-  Guerrero, México.` },
-  {
-    title: 'Diseño y construcción de Capilla en Loma de Lienzo',
-    imageTop: '/public/img/foto1.png', 
-    imageBottom: '/public/img/cecilia-deporte.png', 
-    content: `Villa Victoria, Estado de México` },
-  {
-    title: 'Mantenimiento integral y decoración de la Parroquia del señor del perdón en Cuetzalá Guerrero.',
-    imageTop: '/public/img/foto1.png', 
-    imageBottom: '/public/img/cecilia-deporte.png', 
-    content: `Propietario: Cuetzalá del Progreso,
-  Guerrero, México.` }
-
-]
 
 class Portfolio extends Component {
   constructor (props) {
     super(props)
     this.state = {
       className: '',
-      currentPortfolio: portfolioOne[0],
-      currentImage: img4
+      currentPortfolio: projects[1]
     }
   }
 
@@ -60,60 +31,57 @@ class Portfolio extends Component {
       className: 'is-active',
       currentPortfolio: data
     })
-    console.log('hola')
   }
 
   render () {
+    let {currentPortfolio} = this.state
+    console.log('currentPortfolio', currentPortfolio);
     return (<div className='section'>
       <div className='columns'>
-        <div className='column is-2 timeline-overflow'>
-          <Timeline lineColor='grey' >
-            {portfolioOne.map((item, index) => {
-              return (
-                <TimelineEvent
-                  onClick={() => this.showDetailPortfolio(item)}
-                  title={item.title}
-                  createdAt='2009'
-                  titleStyle={{ fontWeight: 'bold', fontSize: '1rem' }}
-                  icon={<FontAwesomeIcon icon={faCheck} />}
-                  iconColor='#cc342d'
-                  style={{ color: '#cc342d' }}
-                />
-              )
-            })
-            }
-          </Timeline>
+        <div className='column'>
+          <Scrollbars
+              style={{ height: 300 }}>
+              <Timeline lineColor='grey' >
+                {
+                  projects.map((item, index) => {
+                  return (
+                    <TimelineEvent
+                      onClick={() => this.showDetailPortfolio(item)}
+                      title={item.title}
+                      createdAt='2009'
+                      titleStyle={{ fontWeight: 'bold', fontSize: '1rem' }}
+                      icon={<FontAwesomeIcon icon={faCheck} />}
+                      iconColor={currentPortfolio.index === item.index ? '#df3e3e' : '#141720'}
+                      style={{ color: currentPortfolio.index === item.index ? '#df3e3e' : '#141720' }}
+                    />
+                  )
+                })
+                }
+              </Timeline>
+          </Scrollbars>
         </div>
-        {this.state.currentPortfolio && (<div className='column is-3'>
-          <strong>{this.state.currentPortfolio.title}</strong>
-          <p>{this.state.currentPortfolio.content}</p>
+        <div className='column'>
           <div className='columns'>
-            <div className='column'>
-              <div className='slider-portfolio'>
-                <Slider {...settings}>
-                  <div onClick={() => this.setState({ currentImage: img3 })}>
-                    <img className='slider-mini' src={img3} />
-                  </div>
-                  <div onClick={() => this.setState({ currentImage: img4 })}>
-                    <img className='slider-mini' src={img4} />
-                  </div>
-                  <div onClick={() => this.setState({ currentImage: img6 })}>
-                    <img className='slider-mini' src={img6} />
-                  </div>
-                  <div onClick={() => this.setState({ currentImage: img7 })}>
-                    <img className='slider-mini' src={img7} />
-                  </div>
-                </Slider>
-              </div>
+            <div className='column content-slide'>
+              <Slider {...settings} className='slider-portfolio'>
+                {
+                  currentPortfolio.images.map((item, index) => {
+                    console.log(item)
+                    return (
+                      <div key={index}>
+                        <img className='slider-mini' src={item.src} alt='BlazePixel' />
+                      </div>
+                    )
+                  })
+                }
+              </Slider>
             </div>
           </div>
-        </div>)}
-        <div className='column has-flex-end'>
-          <img className='slider-full' src={this.state.currentImage} />
         </div>
       </div>
     </div>)
   }
 }
+
 
 export default Portfolio

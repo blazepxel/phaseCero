@@ -273,13 +273,13 @@ body{
 }
 
 .slider-portfolio{
-	width: 69vh;
-    height: 19vh;
+	width: 42vw;
+  height: 28vh;
 }
 
 .slider-mini{
-	width: 26vh;
-	height: 18vh;
+	width: 42vw;
+	height: 250px;
 	padding: 2vh;
 }
 
@@ -295,4 +295,12 @@ body{
 
 .has-text-centered{
 	text-align: center;
+}
+.content-slide-title{
+	display: flex;
+	justify-content: center;
+}
+.content-slide{
+	display: flex;
+	justify-content: flex-end;
 }
