@@ -8,7 +8,7 @@ import about from '../assets/img/about_us_2.jpg'
 
 const About = () => (
   <div className='about-section' id='about'>
-    <div className='about-resume'>
+    <div className='about-resume section'>
       <div className='columns'>
         <div className='column is-1 container is-hidden-touch' align='center'>
           <div className='contact-text'>

@@ -43,7 +43,7 @@ class Contact extends Component {
     }
 
     return (<div className='hero form-contact' id='contact'>
-      <div className='columns'>
+      <div className='columns' style={{padding: 0, margin: 0}}>
         <div className='column section'>
           <form onSubmit={(e) => this.handleSubmit(e)} autocomplete='off'>
             <p className='title has-text-white'>
@@ -107,7 +107,7 @@ class Contact extends Component {
             </div>
           </form>
         </div>
-        <div className='column' style={{height: '70vh'}}>
+        <div className='column' style={{height: '70vh', padding: 0, margin: 0}}>
           <GoogleMapReact
             bootstrapURLKeys={{ key: 'AIzaSyB8tMMBHC0qAwO9DiJpFQZX3-wFeLnE1bM' }}
             defaultCenter={defaultProps.center}
