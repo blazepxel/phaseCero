@@ -7,6 +7,7 @@ import Base from './pages/base.js'
 
 import logoBP from './assets/img/logoBlazePixel.png'
 import logo from './assets/img/LOGO.png'
+import logoW from './assets/img/blaze-logow.png'
 
 import $ from 'jquery'
 
@@ -44,10 +45,13 @@ class RouterSpark extends Component {
     var {showImg} = this.state
     var navbar = ''
     if (showImg) {
-      navbar = (<img src={logo} alt='Blaze Pixel' width='40' height='40' />)
+      // navbar = (<img src={logoW} alt='Blaze Pixel' width='40' height='40' />)
+      navbar = (<img src={logo} alt='Blaze Pixel' width="40" height="40" />)
+
     } else {
-      navbar = (
-        <img src={logo} alt='Blaze Pixel' width='40' height='40' />)
+      // navbar = (<img src={logoW} alt='Blaze Pixel' width='40' height='40' />)
+      navbar = (<img src={logo} alt='Blaze Pixel' width="40" height="40" />)
+
     }
 
     let classNameHeader = this.state.classHeader
