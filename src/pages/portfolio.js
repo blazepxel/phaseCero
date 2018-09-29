@@ -22,7 +22,7 @@ class Portfolio extends Component {
     super(props)
     this.state = {
       className: '',
-      currentPortfolio: projects[1]
+      currentPortfolio: projects[0]
     }
   }
 
@@ -34,21 +34,21 @@ class Portfolio extends Component {
   }
 
   render () {
-    let {currentPortfolio} = this.state
-    console.log('currentPortfolio', currentPortfolio);
+    let { currentPortfolio } = this.state
+    console.log('currentPortfolio', currentPortfolio)
     return (<div className='section'>
       <div className='columns'>
         <div className='column'>
           <Scrollbars
-              style={{ height: 300 }}>
-              <Timeline lineColor='grey' >
-                {
-                  projects.map((item, index) => {
+            style={{ height: 300 }}>
+            <Timeline lineColor='grey' >
+              {
+                projects.map((item, index) => {
                   return (
                     <TimelineEvent
                       onClick={() => this.showDetailPortfolio(item)}
                       title={item.title}
-                      createdAt='2009'
+                      createdAt={item.year}
                       titleStyle={{ fontWeight: 'bold', fontSize: '1rem' }}
                       icon={<FontAwesomeIcon icon={faCheck} />}
                       iconColor={currentPortfolio.index === item.index ? '#df3e3e' : '#141720'}
@@ -56,8 +56,8 @@ class Portfolio extends Component {
                     />
                   )
                 })
-                }
-              </Timeline>
+              }
+            </Timeline>
           </Scrollbars>
         </div>
         <div className='column'>
@@ -82,6 +82,5 @@ class Portfolio extends Component {
     </div>)
   }
 }
-
 
 export default Portfolio
