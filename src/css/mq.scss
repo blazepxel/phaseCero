@@ -1,3 +1,4 @@
+
 @include mobile {
   .subtitle{
     text-align: center !important;
@@ -10,6 +11,20 @@
     margin-top: 20vh;
     font-size: 4rem;
   }
+  .content-slide{
+  	display: flex;
+  	justify-content: center;
+  }
+  .slider-portfolio{
+  	width: 100vw;
+    height: 28vh;
+  }
+
+  .slider-mini{
+  	width: 100vw;
+  	height: 250px;
+  	padding: 2vh;
+  }
 }
 @include touch {
   .subtitle{
@@ -17,6 +32,10 @@
   }
   .subtitle-service{
     min-height: inherit !important;
+  }
+  .content-slide{
+  	display: flex;
+  	justify-content: center;
   }
 }
 

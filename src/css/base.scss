@@ -1,3 +1,4 @@
+
 $primary: black;
 $gray-light: #FAFAFA;
 $white: white;
@@ -266,4 +267,40 @@ body{
 	display: flex;
 	justify-content: flex-end;
 }
+.timeline-overflow{
+	overflow: scroll;
+	height: 45vh;
+}
 
+.slider-portfolio{
+	width: 42vw;
+  height: 28vh;
+}
+
+.slider-mini{
+	width: 50vw;
+	height: 300px;
+	padding: 2vh;
+}
+
+.slider-full{
+	width: 60vh;
+	height: 35vh;
+}
+
+.has-flex-end{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.has-text-centered{
+	text-align: center;
+}
+.content-slide-title{
+	display: flex;
+	justify-content: center;
+}
+.content-slide{
+	display: flex;
+	justify-content: flex-end;
+}
