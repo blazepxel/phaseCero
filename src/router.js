@@ -6,7 +6,7 @@ import {
 import Base from './pages/base.js'
 
 import logoBP from './assets/img/logoBlazePixel.png'
-import logo from './assets/img/LOGO.png'
+import logo from './assets/img/phase_cero_logo-01.png'
 
 import $ from 'jquery'
 
@@ -44,10 +44,10 @@ class RouterSpark extends Component {
     var {showImg} = this.state
     var navbar = ''
     if (showImg) {
-      navbar = (<img src={logo} alt='Blaze Pixel' width='40' height='40' />)
+      navbar = (<img src={logo} alt='Phase Cero' width='60' height='60' />)
     } else {
       navbar = (
-        <img src={logo} alt='Blaze Pixel' width='40' height='40' />)
+        <img src={logo} alt='Phase Cero' width='80' height='80' />)
     }
 
     let classNameHeader = this.state.classHeader
