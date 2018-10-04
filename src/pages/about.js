@@ -48,7 +48,7 @@ const About = () => (
             </p>
           </div>
         </div>
-        <div className='column is-hidden-desktop'>
+        <div className='column is-hidden-desktop is-hidden-tablet'>
           <div className='columns is-mobile is-hidden-tablet'>
             <div className='column' align='center'>
               <div className='contact-links'>

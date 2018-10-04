@@ -104,6 +104,11 @@ body{
 	align-self: center;
 	display: flex;
 	color: $white;
+	.section{
+		@include from($desktop){
+			margin-left: 150px;
+		}
+	}
 	#title-brand{
 		font-family: 'Montserrat', sans-serif !important;
 		font-weight: 600;

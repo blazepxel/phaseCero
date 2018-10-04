@@ -38,8 +38,8 @@ class Contact extends Component {
     var {form} = this.state
 
     let defaultProps = {
-      center: { lat: 19.20742852680121, lng: -99.5361328125 },
-      zoom: 11
+      center: { lat: 19.261321, lng: -99.6524098 },
+      zoom: 17
     }
 
     return (<div className='hero form-contact' id='contact'>
@@ -107,15 +107,15 @@ class Contact extends Component {
             </div>
           </form>
         </div>
-        <div className='column' style={{height: '70vh', padding: 0, margin: 0}}>
+        <div className='column' style={{padding: 0, margin: 0}}>
           <GoogleMapReact
             bootstrapURLKeys={{ key: 'AIzaSyB8tMMBHC0qAwO9DiJpFQZX3-wFeLnE1bM' }}
             defaultCenter={defaultProps.center}
             defaultZoom={defaultProps.zoom}>
             <AnyReactComponent
-              lat={19.20742852680121}
-              lng={-99.5361328125}
-              text={'Wheres Waldo?'}
+              lat={19.261321}
+              lng={-99.6524098}
+              text={'Phase Cero'}
             />
           </GoogleMapReact>
         </div>
