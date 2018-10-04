@@ -13,6 +13,7 @@ class Contact extends Component {
       form: {
         name: '',
         email: '',
+        tel: '',
         subject: '',
         message: '',
         to: 'contacto@phasecero.com'
@@ -32,7 +33,7 @@ class Contact extends Component {
     e.preventDefault()
     try {
       await axios.post('http://services.blazepxel.com/api/contact', form)
-      this.setState({ loading: false, form: { name: '', email: '', subject: '', message: '' } })
+      this.setState({ loading: false, form: { name: '', email: '', tel: '', subject: '', message: '' } })
     } catch (e) {
       console.log(e)
     }
@@ -87,6 +88,23 @@ class Contact extends Component {
               </div>
             </div>
 
+            <div className='field is-horizontal'>
+              <div className='field-body'>
+                <div className='field'>
+                  <label className='label'>Teléfono</label>
+                  <div className='control'>
+                    <input
+                      className='input'
+                      required
+                      name='tel'
+                      type='tel'
+                      value={form.tel}
+                      onChange={(e) => this.handleChangeForm(e)} />
+                  </div>
+                </div>
+              </div>
+            </div>
+                     
             <div className='field is-horizontal'>
               <div className='field-body'>
                 <div className='field'>
