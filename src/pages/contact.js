@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import GoogleMapReact from 'google-map-react'
 import axios from 'axios'
+import Spinner from 'react-spinkit'
 
 const AnyReactComponent = ({ text }) => <div>{ text }</div>
 
@@ -8,34 +9,38 @@ class Contact extends Component {
   constructor () {
     super()
     this.state = {
+      loading: false,
       form: {
         name: '',
         email: '',
+        tel: '',
         subject: '',
-        message: ''
+        message: '',
+        to: 'contacto@phasecero.com'
       }
     }
   }
 
   handleChangeForm (e) {
-    var {form} = this.state
+    var { form } = this.state
     form[e.target.name] = e.target.value
-    this.setState({form})
+    this.setState({ form })
   }
 
   async handleSubmit (e) {
-    var {form} = this.state
+    var { form } = this.state
+    this.setState({ loading: true })
     e.preventDefault()
     try {
       await axios.post('http://services.blazepxel.com/api/contact', form)
-      this.setState({form: {name: '', email: '', subject: '', message: ''}})
+      this.setState({ loading: false, form: { name: '', email: '', tel: '', subject: '', message: '' } })
     } catch (e) {
       console.log(e)
     }
   }
 
   render () {
-    var {form} = this.state
+    var { form, loading } = this.state
 
     let defaultProps = {
       center: { lat: 19.261321, lng: -99.6524098 },
@@ -86,6 +91,23 @@ class Contact extends Component {
             <div className='field is-horizontal'>
               <div className='field-body'>
                 <div className='field'>
+                  <label className='label'>Teléfono</label>
+                  <div className='control'>
+                    <input
+                      className='input'
+                      required
+                      name='tel'
+                      type='tel'
+                      value={form.tel}
+                      onChange={(e) => this.handleChangeForm(e)} />
+                  </div>
+                </div>
+              </div>
+            </div>
+                     
+            <div className='field is-horizontal'>
+              <div className='field-body'>
+                <div className='field'>
                   <label className='label'>Mensaje</label>
                   <div className='control'>
                     <textarea
@@ -101,9 +123,13 @@ class Contact extends Component {
             </div>
 
             <div className='control is-flex-end'>
-              <button className='button is-red is-rounded'>
-                <label>Enviar</label>
-              </button>
+              {
+                loading ? (<Spinner name='chasing-dots' color='white' />) : (
+                  <button className='button is-red is-rounded'>
+                    <label>Enviar</label>
+                  </button>
+                )
+              }
             </div>
           </form>
         </div>
