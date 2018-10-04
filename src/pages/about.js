@@ -34,7 +34,7 @@ const About = () => (
           <img src={about} alt=""/>
         </div>
         <div className='column'>
-          <div className='section container is-fluid resume'>
+          <div className='container is-fluid resume'>
             <p className='title'>SOBRE NOSOTROS</p>
             <p>
               Es una empresa joven integrada por un grupo de profesionales,
@@ -42,9 +42,10 @@ const About = () => (
               rehabilitación y mantenimiento,</b> logrando ofrecer  a sus usuarios,
               una solución eficaz y de calidad en  sus necesidades constructivas.
               <br /><br />
-              Poseemos la capacidad de trabajar en espacios de gran altura, abiertos y cerrados.
-              <br />
-              Nuestro personal esta capacitado bajo las más altas Normas de Seguridad.
+              Contamos con presencia en todas las posibles áreas de actuación del sector. 
+              Preocupados en cada proyecto por su gestión interna, su planeación, desarrollo y ejecución. 
+              Teniendo como premisas, alcanzar la calidad en todas las obras contratadas y la sólida 
+              construcción de una imagen de garantía.
             </p>
           </div>
         </div>
