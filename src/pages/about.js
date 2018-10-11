@@ -37,7 +37,7 @@ const About = () => (
           <div className='container is-fluid resume'>
             <p className='title'>SOBRE NOSOTROS</p>
             <p>
-              Es una empresa joven integrada por un grupo de profesionales,
+              Somos una empresa joven integrada por un grupo de profesionales,
               con una amplia experiencia en el rubro de la <b>construcción, restauración,
               rehabilitación y mantenimiento,</b> logrando ofrecer  a sus usuarios,
               una solución eficaz y de calidad en  sus necesidades constructivas.
