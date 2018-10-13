@@ -29,6 +29,7 @@ class Portfolio extends Component {
   }
 
   render () {
+
     const settings = {
      dots: false,
      infinite: true,

@@ -19,15 +19,21 @@ import img16 from '../assets/img/image16.jpeg'
 import img17 from '../assets/img/image17.jpeg'
 import img18 from '../assets/img/image18.jpeg'
 
+import catedral from '../assets/img/catedral.JPG'
+import iglesia from '../assets/img/iglesia.jpeg'
+import iglesia2 from '../assets/img/iglesia2.JPG'
+import torre from '../assets/img/torre.jpeg'
+import res1 from '../assets/img/res1.jpeg'
+
 var projects = [
   {
-    'title': 'Mantenimiento integral y decoración de la Parroquia del señor del perdón en Cuetzalá Guerrero.',
-    'imageTop': img7,
+    'title': 'Catedral de San José Toluca, Edo. Méx.',
+    'imageTop': catedral,
     'year': 2009,
     'index': 1,
     'images': [
       {
-        'src': img7
+        'src': catedral
       },
       {
         'src': img8
@@ -36,40 +42,47 @@ var projects = [
         'src': img9
       }
     ],
-    'content': 'Propietario: Cuetzalá del Progreso, Guerrero, México.' },
+    'content': `Trabajos de intervención menor, por daños accionados por sismo y falta de mantenimiento delinmueble. Reintegración de elementos de cantera en cúpula mayor, inyección en junta constructiva,
+      integración de aplanados, consolidación de basamento de escultura de San José, limpieza de pátinas de
+      aleaciones de cobre, consolidación de elementos de cantera en balaustrados, reintegración de
+      chaflanes, aplicación de hidrofugante.` },
   {
-    'title': 'Diseño y construcción de Capilla en Loma de Lienzo',
-    'imageTop': img10,
+    'title': 'Templo de Santiago Zacango, Atenango del Rio Guerrero.',
+    'imageTop': iglesia,
     'year': 2010,
     'index': 2,
     'images': [
       {
-        'src': img10
+        'src': iglesia
       }
     ],
-    'content': 'Villa Victoria, Estado de México' },
+    'content': `Estudios de mecánica de suelos, estudio de verticalidad de elementos, apuntalamiento convergente en
+    bóvedas y cúpula de la nave principal, debido a la presencia de grietas por cortante las cuales poniendo
+    en riesgo de colapso a los elementos`},
   {
-    'title': 'Mantenimiento y decoración de la Parroquia de San Agustín Oapan, en Tepecuacuilco, Guerrero.',
-    'imageTop': img11,
+    'title': 'Parroquia de San juan Chontalcoatlan, Guerrero, México.',
+    'imageTop': iglesia2,
     'year': 2010,
     'index': 3,
     'images': [
       {
-        'src': img11
+        'src': iglesia2
       },
       {
         'src': img12
       }
     ],
-    'content': 'Propietario: Cuetzalá del Progreso, Guerrero, México.' },
+    'content': `Trabajos de apuntalamiento y reintegración de torre campanario por perdida de material pétreo que
+    ponía en riesgo al elemento, liberación de aplanados, consolidación por medio de cosido e inyección de
+    fracturas ocasionadas por sismos, reintegración de aplanados.` },
   {
-    'title': 'Mantenimiento, restauración y decoración de capilla del calvario.',
-    'imageTop': img13,
+    'title': 'San Pedro Atlapulco, Ocoyoacac, Estado de México.',
+    'imageTop': torre,
     'year': 2013,
     'index': 4,
     'images': [
       {
-        'src': img13
+        'src': torre
       },
       {
         'src': img14
@@ -78,15 +91,18 @@ var projects = [
         'src': img15
       }
     ],
-    'content': 'Propietario: Cuetzalá del Progreso, Guerrero, México.' },
+    'content': `Trabajos preliminares de apuntalamiento por daño de sismo 19s en torre campanario, contrafuertes,
+    barda perimetral del atrio y muro testero. Liberación de aplanados, consolidación por medio de cosido e
+    inyección de fracturas, reintegración de los aplanados, consolidación y reintegración de muros de
+    mamposteria.` },
   {
-    'title': 'Mantenimiento y ornamentación de la parroquia de Tepetlixpa, estado de México.',
-    'imageTop': img16,
+    'title': 'Parroquia de Nuestra Señora de Santa Ana, Tlaxmalac, municipio de Huitzuco de los Figueroa, Guerrero Méx',
+    'imageTop': res1,
     'index': 5,
     'year': 2013,
     'images': [
       {
-        'src': img16
+        'src': res1
       },
       {
         'src': img17
@@ -95,7 +111,10 @@ var projects = [
         'src': img18
       }
     ],
-    'content': 'Propietario: Cuetzalá del Progreso, Guerrero, México.' }
+    'content': `Liberación de elementos de concreto, consolidación por medio de cocido e inyección de fracturas
+    ocasionadas por sismos, sustitución de molduras ornamentales colocando lamina de oro de 23 ¾ kilates,
+    impermeabilización base cal, pintura de cal de alta pureza, recuperación de elementos pétreos dañados
+    o cubiertos con aplanados, recuperación de contrafuertes dañados.` }
 
 ]
 
