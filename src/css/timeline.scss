@@ -7,7 +7,7 @@
   $primary-text: #212121;
   $secondary-text: #757575;
   // $accent: #FF4081;
-  $accent: #ffb500;
+  $accent: #ffb100;
 
   section {
     padding: 100px 0;
@@ -52,7 +52,7 @@
 
   	&::before {
   		content: '';
-  		background: $light-primary;
+  		background: $primary;
   		width: 5px;
   		height: 95%;
   		position: absolute;
@@ -122,7 +122,7 @@
   .timeline-img {
   	width: 30px;
   	height: 30px;
-  	background: $primary;
+  	background: $accent;
   	border-radius: 50%;
   	position: absolute;
   	left: 50%;
@@ -132,7 +132,7 @@
   }
 
   a {
-  	background: $primary;
+  	background: $accent;
   	color: $text;
   	padding: 8px 20px;
   	text-transform: uppercase;
