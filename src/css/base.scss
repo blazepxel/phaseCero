@@ -82,6 +82,9 @@ body{
 .navbar-item{
 	img{
 		max-height: none !important;
+		@include touch{
+			width: 40px;
+		}
 	}
 }
 

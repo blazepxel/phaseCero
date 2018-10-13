@@ -122,7 +122,7 @@ class Contact extends Component {
               </div>
             </div>
 
-            <div className='control is-flex-end'>
+            <div className='control'>
               {
                 loading ? (<Spinner name='chasing-dots' color='white' />) : (
                   <button className='button is-red is-rounded'>
