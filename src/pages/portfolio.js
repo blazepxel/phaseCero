@@ -1,21 +1,6 @@
 import React, { Component } from 'react'
-import {Timeline, TimelineEvent} from 'react-event-timeline'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
-import Slider from "react-slick"
-import { Scrollbars } from 'react-custom-scrollbars';
-
 import projects from './projects'
-var settings = {
-  dots: false,
-  infinite: true,
-  autoplay: true,
-  pauseOnHover: false,
-  speed: 4000,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false
-}
+import ScrollAnimation from 'react-animate-on-scroll'
 
 class Portfolio extends Component {
   constructor (props) {
@@ -34,52 +19,37 @@ class Portfolio extends Component {
   }
 
   render () {
-    let { currentPortfolio } = this.state
-    console.log('currentPortfolio', currentPortfolio)
-    return (<div className='section'>
-      <div className='columns'>
-        <div className='column'>
-          <Scrollbars
-            style={{ height: 300 }}>
-            <Timeline lineColor='grey' >
-              {
-                projects.map((item, index) => {
-                  return (
-                    <TimelineEvent
-                      onClick={() => this.showDetailPortfolio(item)}
-                      title={item.title}
-                      createdAt={item.year}
-                      titleStyle={{ fontWeight: 'bold', fontSize: '1rem' }}
-                      icon={<FontAwesomeIcon icon={faCheck} />}
-                      iconColor={currentPortfolio.index === item.index ? '#df3e3e' : '#141720'}
-                      style={{ color: currentPortfolio.index === item.index ? '#df3e3e' : '#141720' }}
-                    />
-                  )
-                })
-              }
-            </Timeline>
-          </Scrollbars>
-        </div>
-        <div className='column'>
-          <div className='columns'>
-            <div className='column content-slide'>
-              <Slider {...settings} className='slider-portfolio'>
-                {
-                  currentPortfolio.images.map((item, index) => {
-                    console.log(item)
-                    return (
-                      <div key={index}>
-                        <img className='slider-mini' src={item.src} alt='BlazePixel' />
+    return (<div className='section section-timeline'>
+    <section className='timeline'>
+      <div className='container'>
+
+        {
+          projects.map((item, index) => {
+            return (
+              <div className='timeline-item'>
+                <ScrollAnimation animateIn='fadeIn'>
+                <div className='timeline-img'></div>
+
+                  <div className='timeline-content timeline-card js--fadeInRight'>
+                    <div className='timeline-img-header'>
+                      <img src={item.images[0].src} alt="" style={{height: 200, width: '100%'}}/>
+                      <div>
+                        <h2>{item.title}</h2>
                       </div>
-                    )
-                  })
-                }
-              </Slider>
-            </div>
-          </div>
-        </div>
+
+                    </div>
+                    <div className='date'>{item.year}</div>
+                    <p>{item.content}</p>
+                    <a className='bnt-more' href='#hola'>More</a>
+                  </div>
+                  </ScrollAnimation>
+                </div>
+              )
+          })
+        }
       </div>
-    </div>)
+    </section>
+  </div>)
   }
 }
 
