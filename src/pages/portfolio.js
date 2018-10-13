@@ -20,35 +20,35 @@ class Portfolio extends Component {
 
   render () {
     return (<div className='section section-timeline'>
-    <section className='timeline'>
-      <div className='container'>
+      <section className='timeline'>
+        <div className='container'>
 
-        {
-          projects.map((item, index) => {
-            return (
-              <div className='timeline-item'>
-                <ScrollAnimation animateIn='fadeIn'>
-                <div className='timeline-img'></div>
+          {
+            projects.map((item, index) => {
+              return (
+                <div className='timeline-item'>
+                  <ScrollAnimation animateIn='fadeIn'>
+                    <div className='timeline-img'></div>
 
-                  <div className='timeline-content timeline-card js--fadeInRight'>
-                    <div className='timeline-img-header'>
-                      <img src={item.images[0].src} alt="" style={{height: 200, width: '100%'}}/>
-                      <div>
-                        <h2>{item.title}</h2>
+                    <div className='timeline-content timeline-card js--fadeInRight'>
+                      <div className='timeline-img-header'>
+                        <img src={item.images[0].src} alt='' style={{ height: 200, width: '100%' }} />
+                        <div>
+                          <h2>{item.title}</h2>
+                        </div>
+
                       </div>
-
+                      <div className='date'>{item.year}</div>
+                      {/* <p>{item.content}</p> */}
+                      <a className='bnt-more' href='#hola'>Ver más</a>
                     </div>
-                    <div className='date'>{item.year}</div>
-                    <p>{item.content}</p>
-                    <a className='bnt-more' href='#hola'>More</a>
-                  </div>
                   </ScrollAnimation>
                 </div>
               )
-          })
-        }
-      </div>
-    </section>
+            })
+          }
+        </div>
+      </section>
   </div>)
   }
 }

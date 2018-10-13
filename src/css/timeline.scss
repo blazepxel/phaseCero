@@ -210,10 +210,13 @@
 
   .timeline-img-header {
 
-  	height: 200px;
+  	height: auto;
   	position: relative;
   	margin-bottom: 20px;
 
+	img {
+		height: auto !important;
+	}
 
   	div {
   		color: $text;
