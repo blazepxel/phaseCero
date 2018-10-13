@@ -316,3 +316,14 @@ body{
 .footer{
 	padding-bottom: 3rem;
 }
+.slides-detail-project{
+	display: flex !important;
+	justify-content: center;
+	img{
+		height: 400px !important
+	}
+}
+.divider{
+	border-bottom: 1px solid gray;
+}
+.slick-slide, .slick-slide *{ outline: none !important; }

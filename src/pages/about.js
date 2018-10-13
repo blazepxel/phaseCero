@@ -3,8 +3,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
-
-import about from '../assets/img/about_us_2.jpg'
+import SimpleSlider from './about-slide'
 
 const About = () => (
   <div className='about-section' id='about'>
@@ -31,7 +30,7 @@ const About = () => (
           </div>
         </div>
         <div className='column is-4 is-hidden-touch'>
-          <img src={about} alt=""/>
+          <SimpleSlider></SimpleSlider>
         </div>
         <div className='column'>
           <div className='container is-fluid resume'>
