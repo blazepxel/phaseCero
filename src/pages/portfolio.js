@@ -85,9 +85,7 @@ class Portfolio extends Component {
                             <div>
                               <h2>{item.title}</h2>
                             </div>
-
                           </div>
-                          <div className='date'>{item.year}</div>
                           <p>{item.content}</p>
                           <a className='bnt-more' onClick={() => this.handleClickSeeMore(item)}>Ver más</a>
                         </div>
