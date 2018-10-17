@@ -2,8 +2,12 @@ import React, {Component} from 'react'
 import GoogleMapReact from 'google-map-react'
 import axios from 'axios'
 import Spinner from 'react-spinkit'
+import marker from '../assets/img/marker.png'
 
-const AnyReactComponent = ({ text }) => <div>{ text }</div>
+const AnyReactComponent = ({ text }) => <div>
+  <strong>{ text }</strong>
+  <img src={marker} alt='Phasecero' width="40"/>
+</div>
 
 class Contact extends Component {
   constructor () {
@@ -104,7 +108,7 @@ class Contact extends Component {
                 </div>
               </div>
             </div>
-                     
+
             <div className='field is-horizontal'>
               <div className='field-body'>
                 <div className='field'>

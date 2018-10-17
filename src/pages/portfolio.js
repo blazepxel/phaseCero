@@ -21,7 +21,7 @@ class Portfolio extends Component {
     })
   }
 
-  handleClickSeeMore(item) {
+  handleClickSeeMore (item) {
     this.setState({
       currentProject: item,
       classNameModal: 'is-active'
@@ -29,16 +29,15 @@ class Portfolio extends Component {
   }
 
   render () {
-
     const settings = {
-     dots: false,
-     infinite: true,
-     autoplay: true,
-     speed: 500,
-     slidesToShow: 1,
-     slidesToScroll: 1,
-     arrows: false
-   }
+      dots: false,
+      infinite: true,
+      autoplay: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false
+    }
     return (
       <div>
         <div class={'modal ' + this.state.classNameModal}>
@@ -47,20 +46,18 @@ class Portfolio extends Component {
             <div className='card'>
               <div className='card-content' >
                 { this.state.currentProject && (<div>
+                  <h1 class='title'>{this.state.currentProject.title}</h1>
+                  <h2 class='subtitle'>{this.state.currentProject.content}</h2>
 
-
-                    <h1 class='title'>{this.state.currentProject.title}</h1>
-                    <h2 class='subtitle'>{this.state.currentProject.content}</h2>
-
-                    <Slider {...settings}>
-                      {
-                        this.state.currentProject.images.map((item, index) => {
-                            return (<div className='slides-detail-project'>
-                               <img src={item.src} alt='Phasecero' />
-                            </div>)
-                        })
-                      }
-                    </Slider>
+                  <Slider {...settings}>
+                    {
+                      this.state.currentProject.images.map((item, index) => {
+                        return (<div className='slides-detail-project'>
+                          <img src={item.src} alt='Phasecero' />
+                        </div>)
+                      })
+                    }
+                  </Slider>
                 </div>)}
               </div>
             </div>
@@ -77,23 +74,20 @@ class Portfolio extends Component {
                   return (
                     <div className='timeline-item'>
                       <ScrollAnimation animateIn='fadeIn'>
-                      <div className='timeline-img'></div>
-
+                        <div className='timeline-img'></div>
                         <div className='timeline-content timeline-card js--fadeInRight'>
                           <div className='timeline-img-header'>
-                            <img src={item.images[0].src} alt='' style={{height: 200, width: '100%'}}/>
+                            <img src={item.images[0].src} alt='' style={{ height: 200, width: '100%' }} />
                             <div>
                               <h2>{item.title}</h2>
                             </div>
-
                           </div>
-                          <div className='date'>{item.year}</div>
-                          <p>{item.content}</p>
+                          {/* <p>{item.content}</p> */}
                           <a className='bnt-more' onClick={() => this.handleClickSeeMore(item)}>Ver más</a>
                         </div>
-                        </ScrollAnimation>
-                      </div>
-                    )
+                      </ScrollAnimation>
+                    </div>
+                  )
                 })
               }
             </div>

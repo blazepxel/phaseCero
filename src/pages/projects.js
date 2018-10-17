@@ -20,7 +20,7 @@ import img17 from '../assets/img/image17.jpeg'
 import img18 from '../assets/img/image18.jpeg'
 
 import catedral from '../assets/img/catedral.JPG'
-import iglesia from '../assets/img/iglesia.jpeg'
+import chonta from '../assets/img/chonta.jpg'
 import iglesia2 from '../assets/img/iglesia2.JPG'
 import torre from '../assets/img/torre.jpeg'
 import res1 from '../assets/img/res1.jpeg'
@@ -48,25 +48,25 @@ var projects = [
       chaflanes, aplicación de hidrofugante.` },
   {
     'title': 'Templo de Santiago Zacango, Atenango del Rio Guerrero.',
-    'imageTop': iglesia,
+    'imageTop': res1,
     'year': 2010,
     'index': 2,
     'images': [
       {
-        'src': iglesia
+        'src': res1
       }
     ],
     'content': `Estudios de mecánica de suelos, estudio de verticalidad de elementos, apuntalamiento convergente en
     bóvedas y cúpula de la nave principal, debido a la presencia de grietas por cortante las cuales poniendo
-    en riesgo de colapso a los elementos`},
+    en riesgo de colapso a los elementos` },
   {
     'title': 'Parroquia de San juan Chontalcoatlan, Guerrero, México.',
-    'imageTop': iglesia2,
+    'imageTop': chonta,
     'year': 2010,
     'index': 3,
     'images': [
       {
-        'src': iglesia2
+        'src': chonta
       },
       {
         'src': img12
@@ -97,12 +97,12 @@ var projects = [
     mamposteria.` },
   {
     'title': 'Parroquia de Nuestra Señora de Santa Ana, Tlaxmalac, municipio de Huitzuco de los Figueroa, Guerrero Méx',
-    'imageTop': res1,
+    'imageTop': iglesia2,
     'index': 5,
     'year': 2013,
     'images': [
       {
-        'src': res1
+        'src': iglesia2
       },
       {
         'src': img17
