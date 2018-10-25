@@ -1,29 +1,39 @@
-import img3 from '../assets/img/image3.jpeg'
-import img4 from '../assets/img/image4.jpeg'
-
-import img6 from '../assets/img/image6.jpeg'
-import img7 from '../assets/img/image7.jpeg'
-import img8 from '../assets/img/image8.jpeg'
-import img9 from '../assets/img/image9.jpeg'
-
-import img10 from '../assets/img/image10.jpeg'
-
-import img11 from '../assets/img/image11.jpeg'
-import img12 from '../assets/img/image12.jpeg'
-
-import img13 from '../assets/img/image13.jpeg'
-import img14 from '../assets/img/image14.jpeg'
-import img15 from '../assets/img/image15.jpeg'
-
-import img16 from '../assets/img/image16.jpeg'
-import img17 from '../assets/img/image17.jpeg'
-import img18 from '../assets/img/image18.jpeg'
 
 import catedral from '../assets/img/catedral.JPG'
 import chonta from '../assets/img/chonta.jpg'
 import iglesia2 from '../assets/img/iglesia2.JPG'
 import torre from '../assets/img/torre.jpeg'
 import res1 from '../assets/img/res1.jpeg'
+
+import cate1 from '../assets/img/catedral_toluca/cate1.JPG'
+import cate2 from '../assets/img/catedral_toluca/cate2.JPG'
+import cate3 from '../assets/img/catedral_toluca/cate3.JPG'
+import cate4 from '../assets/img/catedral_toluca/cate4.JPG'
+import cate5 from '../assets/img/catedral_toluca/cate5.JPG'
+import cate6 from '../assets/img/catedral_toluca/cate6.JPG'
+
+import zac1 from '../assets/img/zacango/zac1.jpg'
+import zac2 from '../assets/img/zacango/zac2.jpg'
+import zac3 from '../assets/img/zacango/zac3.jpeg'
+import zac4 from '../assets/img/zacango/zac4.jpeg'
+import zac5 from '../assets/img/zacango/zac5.jpg'
+
+import chonta1 from '../assets/img/chontacoatl/chonta1.jpeg'
+import chonta2 from '../assets/img/chontacoatl/chonta2.jpeg'
+import chonta3 from '../assets/img/chontacoatl/chonta3.jpeg'
+import chonta4 from '../assets/img/chontacoatl/chonta4.jpeg'
+
+import atla1 from '../assets/img/atapulco/atla1.jpg'
+import atla2 from '../assets/img/atapulco/atla2.jpg'
+import atla3 from '../assets/img/atapulco/atla3.jpeg'
+import atla4 from '../assets/img/atapulco/atla4.jpeg'
+import atla5 from '../assets/img/atapulco/atla5.jpeg'
+
+import tlax1 from '../assets/img/tlax/tlax1.JPG'
+import tlax2 from '../assets/img/tlax/tlax2.JPG'
+import tlax3 from '../assets/img/tlax/tlax3.JPG'
+import tlax4 from '../assets/img/tlax/tlax4.JPG'
+import tlax5 from '../assets/img/tlax/tlax5.JPG'
 
 var projects = [
   {
@@ -33,13 +43,19 @@ var projects = [
     'index': 1,
     'images': [
       {
-        'src': catedral
+        'src': cate2
       },
       {
-        'src': img8
+        'src': cate3
       },
       {
-        'src': img9
+        'src': cate4
+      },
+      {
+        'src': cate5
+      },
+      {
+        'src': cate6
       }
     ],
     'content': `Trabajos de intervención menor, por daños accionados por sismo y falta de mantenimiento delinmueble. Reintegración de elementos de cantera en cúpula mayor, inyección en junta constructiva,
@@ -53,7 +69,19 @@ var projects = [
     'index': 2,
     'images': [
       {
-        'src': res1
+        'src': zac1
+      },
+      {
+        'src': zac2
+      },
+      {
+        'src': zac3
+      },
+      {
+        'src': zac4
+      },
+      {
+        'src': zac5
       }
     ],
     'content': `Estudios de mecánica de suelos, estudio de verticalidad de elementos, apuntalamiento convergente en
@@ -66,10 +94,16 @@ var projects = [
     'index': 3,
     'images': [
       {
-        'src': chonta
+        'src': chonta1
       },
       {
-        'src': img12
+        'src': chonta2
+      },
+      {
+        'src': chonta3
+      },
+      {
+        'src': chonta4
       }
     ],
     'content': `Trabajos de apuntalamiento y reintegración de torre campanario por perdida de material pétreo que
@@ -82,13 +116,19 @@ var projects = [
     'index': 4,
     'images': [
       {
-        'src': torre
+        'src': atla1
       },
       {
-        'src': img14
+        'src': atla2
       },
       {
-        'src': img15
+        'src': atla3
+      },
+      {
+        'src': atla4
+      },
+      {
+        'src': atla5
       }
     ],
     'content': `Trabajos preliminares de apuntalamiento por daño de sismo 19s en torre campanario, contrafuertes,
@@ -102,13 +142,19 @@ var projects = [
     'year': 2013,
     'images': [
       {
-        'src': iglesia2
+        'src': tlax1
       },
       {
-        'src': img17
+        'src': tlax2
       },
       {
-        'src': img18
+        'src': tlax3
+      },
+      {
+        'src': tlax4
+      },
+      {
+        'src': tlax5
       }
     ],
     'content': `Liberación de elementos de concreto, consolidación por medio de cocido e inyección de fracturas

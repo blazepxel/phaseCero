@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import projects from './projects'
 import ScrollAnimation from 'react-animate-on-scroll'
 import Slider from 'react-slick'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 class Portfolio extends Component {
   constructor (props) {
@@ -36,7 +38,8 @@ class Portfolio extends Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: false
+      arrows: false,
+      pauseOnHover: false
     }
     return (
       <div>
