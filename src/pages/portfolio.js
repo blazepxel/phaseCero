@@ -49,8 +49,8 @@ class Portfolio extends Component {
             <div className='card'>
               <div className='card-content' >
                 { this.state.currentProject && (<div>
-                  <h1 class='title'>{this.state.currentProject.title}</h1>
-                  <h2 class='subtitle'>{this.state.currentProject.content}</h2>
+                  <h1 class='title title-modal'>{this.state.currentProject.title}</h1>
+                  <h2 class='subtitle title-modal'>{this.state.currentProject.content}</h2>
 
                   <Slider {...settings}>
                     {

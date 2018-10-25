@@ -10,7 +10,7 @@ import cate2 from '../assets/img/catedral_toluca/cate2.JPG'
 import cate3 from '../assets/img/catedral_toluca/cate3.JPG'
 import cate4 from '../assets/img/catedral_toluca/cate4.JPG'
 import cate5 from '../assets/img/catedral_toluca/cate5.JPG'
-import cate6 from '../assets/img/catedral_toluca/cate6.JPG'
+// import cate6 from '../assets/img/catedral_toluca/cate6.JPG'
 
 import zac1 from '../assets/img/zacango/zac1.jpg'
 import zac2 from '../assets/img/zacango/zac2.jpg'
@@ -43,19 +43,13 @@ var projects = [
     'index': 1,
     'images': [
       {
-        'src': cate2
+        'src': catedral
       },
       {
         'src': cate3
       },
       {
         'src': cate4
-      },
-      {
-        'src': cate5
-      },
-      {
-        'src': cate6
       }
     ],
     'content': `Trabajos de intervención menor, por daños accionados por sismo y falta de mantenimiento delinmueble. Reintegración de elementos de cantera en cúpula mayor, inyección en junta constructiva,
@@ -69,7 +63,7 @@ var projects = [
     'index': 2,
     'images': [
       {
-        'src': zac1
+        'src': res1
       },
       {
         'src': zac2
@@ -94,7 +88,7 @@ var projects = [
     'index': 3,
     'images': [
       {
-        'src': chonta1
+        'src': chonta
       },
       {
         'src': chonta2
@@ -116,7 +110,7 @@ var projects = [
     'index': 4,
     'images': [
       {
-        'src': atla1
+        'src': torre
       },
       {
         'src': atla2
@@ -126,9 +120,6 @@ var projects = [
       },
       {
         'src': atla4
-      },
-      {
-        'src': atla5
       }
     ],
     'content': `Trabajos preliminares de apuntalamiento por daño de sismo 19s en torre campanario, contrafuertes,
@@ -142,7 +133,7 @@ var projects = [
     'year': 2013,
     'images': [
       {
-        'src': tlax1
+        'src': iglesia2
       },
       {
         'src': tlax2
