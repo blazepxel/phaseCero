@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import projects from './projects'
 import ScrollAnimation from 'react-animate-on-scroll'
 import Slider from 'react-slick'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 class Portfolio extends Component {
   constructor (props) {
@@ -13,6 +15,12 @@ class Portfolio extends Component {
       classNameModal: ''
     }
   }
+
+  componentDidMount () {
+     AOS.init({
+       duration: 1000
+     })
+   }
 
   showDetailPortfolio (data) {
     this.setState({
@@ -72,8 +80,7 @@ class Portfolio extends Component {
               {
                 projects.map((item, index) => {
                   return (
-                    <div className='timeline-item'>
-                      <ScrollAnimation animateIn='fadeIn'>
+                    <div className='timeline-item' data-aos="fade-up">
                         <div className='timeline-img'></div>
                         <div className='timeline-content timeline-card js--fadeInRight'>
                           <div className='timeline-img-header'>
@@ -82,10 +89,8 @@ class Portfolio extends Component {
                               <h2>{item.title}</h2>
                             </div>
                           </div>
-                          {/* <p>{item.content}</p> */}
                           <a className='bnt-more' onClick={() => this.handleClickSeeMore(item)}>Ver más</a>
                         </div>
-                      </ScrollAnimation>
                     </div>
                   )
                 })
