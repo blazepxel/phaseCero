@@ -36,7 +36,7 @@ class Contact extends Component {
     this.setState({ loading: true })
     e.preventDefault()
     try {
-      await axios.post('http://services.blazepxel.com/api/contact', form)
+      await axios.post('https://services.blazepxel.com/api/contact', form)
       this.setState({ loading: false, form: { name: '', email: '', tel: '', subject: '', message: '' } })
     } catch (e) {
       console.log(e)
