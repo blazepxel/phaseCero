@@ -102,7 +102,7 @@ class Portfolio extends Component {
           <div align='center'>
             <a href='https://www.facebook.com/Phase-Cero-Inmobiliaria-Y-Constructora-Sa-De-Cv-1410823498989622' target='_blank' rel='noopener noreferrer'>
               ¿Quieres conocer más de nuestro trabajo? <br />
-              Has clic aquí.
+              Haz clic aquí.
             </a>
           </div>
         </div>
