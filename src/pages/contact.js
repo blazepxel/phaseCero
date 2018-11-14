@@ -3,6 +3,8 @@ import GoogleMapReact from 'google-map-react'
 import axios from 'axios'
 import Spinner from 'react-spinkit'
 import marker from '../assets/img/marker.png'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 const AnyReactComponent = ({ text }) => <div>
   <strong>{ text }</strong>
@@ -36,8 +38,11 @@ class Contact extends Component {
     this.setState({ loading: true })
     e.preventDefault()
     try {
-      await axios.post('http://services.blazepxel.com/api/contact', form)
+      await axios.post('https://services.blazepxel.com/api/contact', form)
       this.setState({ loading: false, form: { name: '', email: '', tel: '', subject: '', message: '' } })
+      toast.success('¡Listo!, pronto nos pondremos en contacto contigo', {
+        position: toast.POSITION.TOP_RIGHT
+      })
     } catch (e) {
       console.log(e)
     }
@@ -52,6 +57,7 @@ class Contact extends Component {
     }
 
     return (<div className='hero form-contact' id='contact'>
+      <ToastContainer />
       <div className='columns' style={{padding: 0, margin: 0}}>
         <div className='column section'>
           <form onSubmit={(e) => this.handleSubmit(e)} autocomplete='off'>
@@ -130,7 +136,7 @@ class Contact extends Component {
               {
                 loading ? (<Spinner name='chasing-dots' color='white' />) : (
                   <button className='button is-red is-rounded'>
-                    <label>Enviar</label>
+                    Enviar
                   </button>
                 )
               }
