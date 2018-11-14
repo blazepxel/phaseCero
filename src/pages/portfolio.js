@@ -75,6 +75,7 @@ class Portfolio extends Component {
         </div>
 
         <div className='section section-timeline' id='portfolio'>
+          <p class='title' align='center'>Portafolio</p>
           <section className='timeline'>
             <div className='container'>
 
