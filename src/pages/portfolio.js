@@ -75,7 +75,7 @@ class Portfolio extends Component {
         </div>
 
         <div className='section section-timeline' id='portfolio'>
-          <p class='title' align='center'>Portafolio</p>
+          <p className='title' align='center'>Portafolio</p>
           <section className='timeline'>
             <div className='container'>
 
@@ -99,6 +99,12 @@ class Portfolio extends Component {
               }
             </div>
           </section>
+          <div align='center'>
+            <a href='https://www.facebook.com/Phase-Cero-Inmobiliaria-Y-Constructora-Sa-De-Cv-1410823498989622' target='_blank' rel='noopener noreferrer'>
+              ¿Quieres conocer más de nuestro trabajo? <br />
+              Has clic aquí.
+            </a>
+          </div>
         </div>
       </div>)
   }
