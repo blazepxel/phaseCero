@@ -52,12 +52,12 @@ var projects = [
         'src': cate4
       }
     ],
-    'content': `Trabajos de intervención menor, por daños accionados por sismo y falta de mantenimiento delinmueble. Reintegración de elementos de cantera en cúpula mayor, inyección en junta constructiva,
+    'content': `Trabajos de intervención menor, por daños accionados por sismo y falta de mantenimiento del inmueble. Reintegración de elementos de cantera en cúpula mayor, inyección en junta constructiva,
       integración de aplanados, consolidación de basamento de escultura de San José, limpieza de pátinas de
       aleaciones de cobre, consolidación de elementos de cantera en balaustrados, reintegración de
       chaflanes, aplicación de hidrofugante.` },
   {
-    'title': 'Templo de Santiago Zacango, Atenango del Rio Guerrero.',
+    'title': 'Templo de Santiago Zacango, Atenango del Río Guerrero.',
     'imageTop': res1,
     'year': 2010,
     'index': 2,
@@ -78,9 +78,9 @@ var projects = [
         'src': zac5
       }
     ],
-    'content': `Estudios de mecánica de suelos, estudio de verticalidad de elementos, apuntalamiento convergente en
-    bóvedas y cúpula de la nave principal, debido a la presencia de grietas por cortante las cuales poniendo
-    en riesgo de colapso a los elementos` },
+    'content': `Estudios de mecánica de suelos, estudio de verticalidad de elementos,
+    apuntalamiento convergente en bóvedas y cúpula de la nave principal, debido a la
+    presencia de grietas por cortante las cuales estaban poniendo en riesgo de colapso a los elementos.` },
   {
     'title': 'Parroquia de San juan Chontalcoatlan, Guerrero, México.',
     'imageTop': chonta,
@@ -149,7 +149,7 @@ var projects = [
       }
     ],
     'content': `Liberación de elementos de concreto, consolidación por medio de cocido e inyección de fracturas
-    ocasionadas por sismos, sustitución de molduras ornamentales colocando lamina de oro de 23 ¾ kilates,
+    ocasionadas por sismos, sustitución de molduras ornamentales colocando lámina de oro de 23 ¾ kilates,
     impermeabilización base cal, pintura de cal de alta pureza, recuperación de elementos pétreos dañados
     o cubiertos con aplanados, recuperación de contrafuertes dañados.` }
 
