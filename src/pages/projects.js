@@ -125,7 +125,7 @@ var projects = [
     'content': `Trabajos preliminares de apuntalamiento por daño de sismo 19s en torre campanario, contrafuertes,
     barda perimetral del atrio y muro testero. Liberación de aplanados, consolidación por medio de cosido e
     inyección de fracturas, reintegración de los aplanados, consolidación y reintegración de muros de
-    mamposteria.` },
+    mampostería.` },
   {
     'title': 'Parroquia de Nuestra Señora de Santa Ana, Tlaxmalac, municipio de Huitzuco de los Figueroa, Guerrero Méx',
     'imageTop': iglesia2,
@@ -148,8 +148,8 @@ var projects = [
         'src': tlax5
       }
     ],
-    'content': `Liberación de elementos de concreto, consolidación por medio de cocido e inyección de fracturas
-    ocasionadas por sismos, sustitución de molduras ornamentales colocando lámina de oro de 23 ¾ kilates,
+    'content': `Liberación de elementos de concreto, consolidación por medio de cosido e inyección de fracturas
+    ocasionadas por sismos, sustitución de molduras ornamentales colocando lamina de oro de 23 ¾ quilates,
     impermeabilización base cal, pintura de cal de alta pureza, recuperación de elementos pétreos dañados
     o cubiertos con aplanados, recuperación de contrafuertes dañados.` }
 

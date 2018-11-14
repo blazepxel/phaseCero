@@ -74,7 +74,7 @@ class Portfolio extends Component {
           <button class='modal-close is-large' aria-label='close' onClick={() => this.setState({classNameModal: ''})}></button>
         </div>
 
-        <div className='section section-timeline'>
+        <div className='section section-timeline' id='portfolio'>
           <p class='title' align='center'>Portafolio</p>
           <section className='timeline'>
             <div className='container'>
